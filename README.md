@@ -3,6 +3,4 @@ oarg.info
 
 alpha
 
-
-So this is Martin testing out github on the manjaro virtualbox.
-Lets see how this works....
+Nice also es geht. Ich kann die files von meinem Manjaro Virtualbox hier uploaden. Perfekt!
