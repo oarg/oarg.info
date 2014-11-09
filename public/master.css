@@ -3,6 +3,17 @@ p {
 	font-size: 15px;
 }
 
+button {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+ul {
+	margin-top: 400px;
+	border-style: solid;
+	border-color: #E0EEEE;
+}
+
 .pH {
 	color: black;
 	text-align: center;
@@ -59,8 +70,10 @@ p {
 
 #messages {
 	list-style-type: none;
-	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
 	padding: 0;
+	width: 50%;
 }
 
 #messages li {
@@ -69,4 +82,8 @@ p {
 
 #messages li:nth-child(odd) {
 	background: #eee;
+}
+
+#m {
+	margin-left: 25%;
 }
