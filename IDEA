@@ -1,0 +1,47 @@
+Ich mach das einfach mal so.
+
+Was wir brauchen:
+
+    "oarge db"
+      - HTTP Server (Node.js)
+        sendet Webseite für alle Geräte
+          Kommunikation zum Server erfolgt über Socket Server
+      - Socket Server (Socket.IO)
+      - Datenbank (MongoDB)
+          Verknüpfungen
+            In dieser Datenbank werden alle Verknüpfungen gespeichert. 
+            User speichert am 22.11.2014 um 12:01 folgende Keywords:
+            
+            "Greg Klausn" "Unterhaltung" "Positiv" "Steam"
+            
+            Sprich, der User hat am 22.11.2014 um 12:01 mit Greg Klausn eine
+            positive Unterhaltung über Steam geführt.
+            
+            In die "Verknüpfungen" Datenbank werden diese nun so eingefügt:
+            
+            [EinmaligeID; VerknüpfungsID; TimeStamp]
+            
+            sprich, wir tragen die 33. Verknüpfung ein:
+            
+            [0, 33, 22.11.14-12:01]
+            [1, 33, 22.11.14-12:01]
+            [2, 33, 22.11.14-12:01]
+            [3, 33, 22.11.14-12:01]
+            
+            Diese 4 Keywords sind nun miteinander verknüpft zu einer gewissen Zeit.
+            
+          Keywords
+            In den Keywords werden nur die Keywords gespeichert. Jedes Keyword
+            hat eine eigene EinmaligeID, das Keyword als String und einen Count.
+            
+            [Keyword; EinmaligeID; Count]
+
+            Wenn wir davon ausgehen, dass keines der oben genannten Keywords
+            bereits in der DB vorhanden sind, werden sie so eingetragen:
+            
+            Greg Klausn, 0, 0
+            Unterhaltung, 1, 0
+            Positiv, 2, 0
+            Steam, 3, 0
+            
+            Je öfter das Keyword genutzt wird, desto höher wird der Count.            
