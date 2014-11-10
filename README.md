@@ -5,7 +5,7 @@ alpha
 
 Nice also es geht. Ich kann die files von meinem Manjaro Virtualbox hier uploaden. Perfekt!
 
-Ich mach mal eine index.html seite mit server file und so (ich verwende um zu hosten das npm module static-server: https://github.com/nodeapps/static-server
+EXPRESS
 
 To access webpage:
 
@@ -16,6 +16,6 @@ INSTALL:
 clone git repo (git clone git.url)
 
 RUN:
-node server.js
+node s.js
 
-To access the website on the browser enter ip address followed by port 8080
+To access the website on the browser enter ip address followed by port 80
