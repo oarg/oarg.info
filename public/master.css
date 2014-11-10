@@ -14,6 +14,15 @@ ul {
 	border-color: #E0EEEE;
 }
 
+div.naus {
+	border-style: solid;
+	border-color: #E0EEEE;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+	width: 500px;
+}
+
 .pH {
 	color: black;
 	text-align: center;
@@ -73,7 +82,7 @@ ul {
 	margin-left: auto;
 	margin-right: auto;
 	padding: 0;
-	width: 50%;
+	width: 500px;
 }
 
 #messages li {
@@ -85,5 +94,5 @@ ul {
 }
 
 #m {
-	margin-left: 25%;
+	width: 450px;
 }
